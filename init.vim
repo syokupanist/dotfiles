@@ -214,14 +214,10 @@ nnoremap fd :<C-u>bd<CR>
 nnoremap fn :<C-u>bn<CR>
 nnoremap fp :<C-u>bp<CR>
 nnoremap fl :<C-u>ls<CR>
-inoremap <C-j> <Nop>
+inoremap <C-h> <Nop>
 nnoremap <C-j> <Nop>
-inoremap <C-m> <Nop>
-nnoremap <C-m> <Nop>
-inoremap <silent> <C-j> <ESC>:tabnext<CR>i
-nnoremap <silent> <C-j> :tabnext<CR>
-inoremap <silent> <C-m> <ESC>:tabprevious<CR>i
-nnoremap <silent> <C-m> :tabprevious<CR>
+nnoremap <C-j> :<C-u>tabnext<CR>
+nnoremap <C-h> :<C-u>tabprevious<CR>
 
 nnoremap sq :<C-u>q<CR>
 nnoremap sf :<C-u>e .<CR>
